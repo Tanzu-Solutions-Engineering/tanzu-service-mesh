@@ -1,0 +1,108 @@
+---
+apiVersion: autoscaling.tsm.tanzu.vmware.com/v1alpha1
+kind: Definition
+metadata:
+  name: asd-cart
+  namespace: acme
+  labels:
+    app: cart
+    version: v1
+    release: demo
+spec:
+  scaleTargetRef:
+    kubernetes:
+      kind: Deployment
+      name: cart
+  scaleRule:
+    mode: EFFICIENCY
+    enabled: true
+    instances:
+      min: 2
+      max: 10
+    trigger:
+      gracePeriodSeconds: 90
+      metric:
+        name: CPUUsagePercent
+        scaleUp: 80
+        scaleDown: 50
+---
+apiVersion: autoscaling.tsm.tanzu.vmware.com/v1alpha1
+kind: Definition
+metadata:
+  name: asd-catalog
+  namespace: acme
+  labels:
+    app: catalog
+    version: v1
+    release: demo
+spec:
+  scaleTargetRef:
+    kubernetes:
+      kind: Deployment
+      name: catalog
+  scaleRule:
+    mode: EFFICIENCY
+    enabled: true
+    instances:
+      min: 2
+      max: 10
+    trigger:
+      gracePeriodSeconds: 90
+      metric:
+        name: CPUUsagePercent
+        scaleUp: 80
+        scaleDown: 50
+---
+apiVersion: autoscaling.tsm.tanzu.vmware.com/v1alpha1
+kind: Definition
+metadata:
+  name: asd-order
+  namespace: acme
+  labels:
+    app: order
+    version: v1
+    release: demo
+spec:
+  scaleTargetRef:
+    kubernetes:
+      kind: Deployment
+      name: order
+  scaleRule:
+    mode: EFFICIENCY
+    enabled: true
+    instances:
+      min: 3
+      max: 10
+    trigger:
+      gracePeriodSeconds: 90
+      metric:
+        name: CPUUsagePercent
+        scaleUp: 80
+        scaleDown: 50
+---
+apiVersion: autoscaling.tsm.tanzu.vmware.com/v1alpha1
+kind: Definition
+metadata:
+  name: asd-payment
+  namespace: acme
+  labels:
+    app: payment
+    version: v1
+    release: demo
+spec:
+  scaleTargetRef:
+    kubernetes:
+      kind: Deployment
+      name: payment
+  scaleRule:
+    mode: EFFICIENCY
+    enabled: true
+    instances:
+      min: 2
+      max: 10
+    trigger:
+      gracePeriodSeconds: 90
+      metric:
+        name: CPUUsagePercent
+        scaleUp: 80
+        scaleDown: 50

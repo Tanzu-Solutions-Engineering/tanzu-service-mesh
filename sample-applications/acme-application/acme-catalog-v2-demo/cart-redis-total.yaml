@@ -1,0 +1,71 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cart-redis
+  labels:
+    app: acmefit-cart-redis-total
+    service: cart-redis
+spec:
+  ports:
+    - port: 6379
+      name: tcp-redis-cart
+  selector:
+    app: acmefit-cart-redis-total
+    service: cart-redis
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cart-redis
+  labels:
+    app: acmefit-cart-redis-total
+    service: cart-redis
+    version: 1.0.0
+spec:
+  selector:
+    matchLabels:
+      app: acmefit-cart-redis-total  # has to match .spec.template.metadata.labels
+      service: cart-redis
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: acmefit-cart-redis-total  # has to match .spec.selector.matchLabels
+        service: cart-redis
+    spec:
+      containers:
+        - name: cart-redis
+          image: redis:5.0.3-alpine
+          command:
+            - "redis-server"
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "100Mi"
+          ports:
+            - name: tcp-redis
+              containerPort: 6379
+              protocol: "TCP"
+          env:
+          - name: REDIS-HOST
+            value: 'cart-redis'
+          - name: REDIS_PASS
+            valueFrom:
+              secretKeyRef:
+                name: redis-pass
+                key: password
+          volumeMounts:
+            - mountPath: /var/lib/redis
+              name: redis-data
+#            - mountPath: /etc/redis
+#              name: redis-config
+      volumes:
+        - name: redis-data
+          emptyDir: {}
+#        - name: redis-config
+#          configMap:
+#            name: redis-config
+#            items:
+#              - key: redis-config
+#                path: redis.conf
