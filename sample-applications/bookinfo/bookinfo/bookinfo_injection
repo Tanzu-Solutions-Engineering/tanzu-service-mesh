@@ -1,1 +1,0 @@
-kubectl apply -f <(istioctl kube-inject -f /home/localadmin/bookinfo/bookinfo.yaml) -n bookinfo
