@@ -1,4 +1,4 @@
-# This is the main repository of Tanzu Service Mesh demo materials #
+# This is the main repository of Tanzu Service Mesh materials #
 
 ## In this repository: ##
  - Sample application
