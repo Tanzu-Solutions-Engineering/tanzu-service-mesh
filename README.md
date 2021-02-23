@@ -16,7 +16,7 @@
 
 
 
-  - SLO Autoscaler
+  - SLO & Autoscaler
     - ACME app SLO and Autoscaler configuration
     - Bookinfo app SLO and Autoscaler configuration
     - Tanzu Service mesh CRD configuration
