@@ -56,4 +56,15 @@
     - [TSM Service Autoscaler](https://docs.vmware.com/en/VMware-Tanzu-Service-Mesh/services/slos-with-tsm/GUID-979BC58E-C3D3-4542-8D33-8CD414E9762F.html)
     - [TSM Service Level Objectives](https://docs.vmware.com/en/VMware-Tanzu-Service-Mesh/services/service-autoscaling-with-tsm-user-guide/GUID-E4FFF71B-441E-42D4-8A50-54B10966DC9D.html)
 
+  - Collateral
+    - [Service Mesh for Dummies](https://pages.cloud.vmware.com/service-mesh-dummies)
+    - [TSM Solution Brief](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/nsx/vmware-tanzu-solution-brief.pdf)
+    - [TMS Top Use Cases White Paper](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/nsx/vmware-tanzu-usecases.pdf)
+    - [Forrester: With Microservices, A Service Mesh Helps Developers Focus On The Business (Oct 2019)](https://vault.vmware.com/group/vault-main-library/document-preview/-/document_library/6KC5yhh3TpWl/view_file/51269976)
+    - [451 Research: Microservices and Service Mesh for Digital Transformation (Nov 2018)](https://vault.vmware.com/group/vault-main-library/document-preview/-/document_library/6KC5yhh3TpWl/view_file/51531740)
+
+  - Websites
+    - [Tanzu Service Mesh on the Tanzu Website](https://tanzu.vmware.com/service-mesh)
+    - [Tanzu Service Mesh on vmware.com](https://www.vmware.com/products/tanzu-service-mesh.html)
+
 
