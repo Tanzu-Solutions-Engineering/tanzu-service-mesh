@@ -35,8 +35,7 @@
    - Book Info application
      - Bookinfo - Bookinfo full installation in one cluster
      - Bookinfo-splitted - Bookinfo splitted between front end and back end services for GNS demo
-     - 
-### SLO & Autoscaler
+ ### SLO & Autoscaler
    - ACME app SLO and Autoscaler configuration
    - Bookinfo app SLO and Autoscaler configuration
    - Tanzu Service mesh CRD configuration
