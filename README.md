@@ -43,3 +43,17 @@
      - [VMware and Google Showcase Hybrid Cloud Deployment for Application Platform and Development Teams (Apr 2019)](https://blogs.vmware.com/networkvirtualization/2019/04/vmware-and-google-showcase-hybrid-cloud-deployment.html/)
      - [Service Mesh: The Next Step in Networking for Modern Applications (Jul 2019)](https://blogs.vmware.com/networkvirtualization/2019/07/service-mesh-networking-for-modern-applications.html/)
      - [Seamless Cloud-Native Apps with gRPC-Web and Istio (Nov 2018)](https://venilnoronha.io/seamless-cloud-native-apps-with-grpc-web-and-istio)
+
+  - Podcasts
+    - [NSX Service Mesh and Multicloud (NSXninjas Podcast | Feb 2020)](https://podcasts.apple.com/us/podcast/nsxninjas-podcast-episode-0002-02-21-20-nsx-service/id1499933486?i=1000466751340)
+  
+  - Official Product Documentation
+    - [TSM Concepts Document](https://docs.vmware.com/en/VMware-Tanzu-Service-Mesh/services/concepts-guide/GUID-DEB57BAB-688F-4A4D-81E8-9CECC0F80FD5.html)
+    - [TSM Getting Started](https://docs.vmware.com/en/VMware-Tanzu-Service-Mesh/services/getting-started-guide/GUID-FC2E0065-AC7B-4AEA-944A-2AC4DF2AA789.html)
+    - [TSM API Programming Guide](https://docs.vmware.com/en/VMware-Tanzu-Service-Mesh/services/api-programming-guide/GUID-CC5A0A46-0A4B-45D6-9D1B-DA8C8174AD84.html)
+    - [TSM Platform Support](https://docs.vmware.com/en/VMware-Tanzu-Service-Mesh/services/tanzu-service-mesh-environment-requirements-and-supported-platforms/GUID-D0B939BE-474E-4075-9A65-3D72B5B9F237.html)
+    - [TSM Release Notes](https://docs.vmware.com/en/VMware-Tanzu-Service-Mesh/services/rn/VMware-Tanzu-Service-Mesh-Release-Notes.html)
+    - [TSM Service Autoscaler](https://docs.vmware.com/en/VMware-Tanzu-Service-Mesh/services/slos-with-tsm/GUID-979BC58E-C3D3-4542-8D33-8CD414E9762F.html)
+    - [TSM Service Level Objectives](https://docs.vmware.com/en/VMware-Tanzu-Service-Mesh/services/service-autoscaling-with-tsm-user-guide/GUID-E4FFF71B-441E-42D4-8A50-54B10966DC9D.html)
+
+
