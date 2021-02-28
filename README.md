@@ -4,7 +4,7 @@
 
 ### Public resources
    - Blog posts
-     - Declare Your Application State with Tanzu Service Mesh
+     - [Declare Your Application State with Tanzu Service Mesh](https://blogs.vmware.com/networkvirtualization/2020/12/tsm-slo-acme.html/)
      - Multi-cloud made super easy with Tanzu Service Mesh (Dec 2020)
      - Achieve Multi-Cloud Application Scalability for Modern Apps (Nov 2020)
      - A Deep Dive into the Tanzu Service Mesh Autoscaling VMworld 2020 Keynote Demo (Sep 2020)
