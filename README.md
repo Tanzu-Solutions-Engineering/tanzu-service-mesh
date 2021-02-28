@@ -37,10 +37,10 @@
      - Bookinfo-splitted - Bookinfo splitted between front end and back end services for GNS demo
      - 
 ### SLO & Autoscaler
-    - ACME app SLO and Autoscaler configuration
-    - Bookinfo app SLO and Autoscaler configuration
-    - Tanzu Service mesh CRD configuration
+   - ACME app SLO and Autoscaler configuration
+   - Bookinfo app SLO and Autoscaler configuration
+   - Tanzu Service mesh CRD configuration
 
 ### Traffic generator
-    - ACME-traffic-generator - Configuration files for ACME traffic injection
-    - Bookinfo-traffic-generator - SLO and Bookinfo configuration
+   - ACME-traffic-generator - Configuration files for ACME traffic injection
+   - Bookinfo-traffic-generator - SLO and Bookinfo configuration
