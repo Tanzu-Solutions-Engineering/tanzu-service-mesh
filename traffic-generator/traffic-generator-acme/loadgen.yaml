@@ -50,7 +50,7 @@ spec:
         - containerPort: 8089
         env:
         - name: FRONTEND_ADDR
-          value: "frontend:3000"
+          value: "shopping:3000"
         resources:
           requests:
             cpu: 300m
