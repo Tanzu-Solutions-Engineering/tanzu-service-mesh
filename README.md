@@ -21,6 +21,6 @@
      - Tanzu Service mesh CRD configuration
 
    - Traffic generator
-     - ACME-traffic-generator - Configuration files for ACME traffic injection
-     - Bookinfo-traffic-generator - SLO and Bookinfo configuration
+     - ACME-traffic-generator - Configuration files for ACME traffic injection.
+     - Bookinfo-traffic-generator - SLO and Bookinfo configuration.
 
