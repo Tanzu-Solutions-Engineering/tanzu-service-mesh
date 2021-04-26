@@ -24,6 +24,7 @@
      - ACME-traffic-generator - Configuration files for ACME traffic injection
      - Bookinfo-traffic-generator - SLO and Bookinfo configuration
 
+<<<<<<< HEAD
 ### Public resources
    - Blog posts
      - [Declare Your Application State with Tanzu Service Mesh](https://blogs.vmware.com/networkvirtualization/2020/12/tsm-slo-acme.html/)
@@ -69,3 +70,5 @@
     - [Tanzu Service Mesh on vmware.com](https://www.vmware.com/products/tanzu-service-mesh.html)
 
 
+=======
+>>>>>>> 07e622d8592f80a92baa57d37526f0d1a25b6d13
