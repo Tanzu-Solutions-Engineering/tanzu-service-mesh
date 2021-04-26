@@ -16,10 +16,24 @@ spec:
     spec:
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
+<<<<<<< HEAD
       volumes:
       - name: acme-locustfile
         configMap:
           name: acme-locustfile
+=======
+      initContainers:
+      - name: wait-frontend
+        image: alpine:3.7
+        command: ['sh', '-c', 'echo -e "http://nl.alpinelinux.org/alpine/v3.5/main\nhttp://nl.alpinelinux.org/alpine/v3.5/community" > /etc/apk/repositories' , 'set -x;  apk update ; apk add curl && 
+          until timeout -t 2 curl -f "http://${FRONTEND_ADDR}"; do 
+            echo "waiting for http://${FRONTEND_ADDR}"; 
+            sleep 2;
+          done;']
+        env:
+        - name: FRONTEND_ADDR
+          value: "shopping:3000"
+>>>>>>> 2aa2048628925b3bd1dcf40f2e2fcc6ec65130d3
       containers:
       - name: main
         image: harbor.tanzuworld.com/apps/locust:1.4.1
@@ -27,9 +41,14 @@ spec:
         ports:
         - containerPort: 8089
         env:
+<<<<<<< HEAD
         command:
         - locust
         args: ["-f","/mnt/locust/locustfile.py","--headless","--host=http://istio-ingressgateway.istio-system"]
+=======
+        - name: FRONTEND_ADDR
+          value: "shopping:3000"
+>>>>>>> 2aa2048628925b3bd1dcf40f2e2fcc6ec65130d3
         resources:
           requests:
             cpu: 300m
