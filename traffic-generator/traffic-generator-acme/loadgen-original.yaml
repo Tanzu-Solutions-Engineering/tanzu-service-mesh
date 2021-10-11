@@ -22,7 +22,7 @@ spec:
           name: acme-locustfile
       containers:
       - name: main
-        image: harbor.tanzuworld.com/apps/locust:1.4.1
+        image: docker.io/vmwareallspark/acme-load-gen:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8089
