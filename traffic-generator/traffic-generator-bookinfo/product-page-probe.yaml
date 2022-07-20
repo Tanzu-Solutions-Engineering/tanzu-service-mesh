@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-page-probe
+  namespace: loadgen
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prtc-page-probe
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: prtc-page-probe
+        version: v1
+    spec:
+      containers:
+      - name: prtc-loadgen
+        image: fortio/fortio:1.11.4
+        imagePullPolicy: IfNotPresent
+        command:
+          - fortio 
+        args: ["load", "-k", "-qps", "1", "-t", "24h", "http://istio-ingressgateway.istio-system/productpage"]
+        tty: true
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "50m"
+      restartPolicy: Always
